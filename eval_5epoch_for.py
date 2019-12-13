@@ -42,7 +42,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = GPUID
 parser = argparse.ArgumentParser(
     description='Single Shot MultiBox Detector Evaluation')
 parser.add_argument('--trained_model',
-                    default="/home/young/workspace/ml-project/ssd.pytorch/weights/ssd_SIXray_20191212_90000.pth", type=str,
+                    default="/home/young/workspace/ml-project/Sixray-Buaa/weights/ssd_SIXray_20191212_90000.pth", type=str,
                     help='Trained state_dict file path to open')
 parser.add_argument(  # '--save_folder', default='/media/dsg3/husheng/eval/', type=str,
     '--save_folder',
@@ -567,7 +567,7 @@ def reset_args(EPOCH):
     #    EPOCH)
     #saver_root = '/media/trs2/wuzhangjie/SSD/eval/Xray20190723/Attention/base_battery_core_coreless_bs8_V/'
     
-    saver_root = '/home/young/workspace/ml-project/ssd.pytorch/Attention/base_battery_core_coreless/'
+    saver_root = '/home/young/workspace/ml-project/Sixray-Buaa/Attention/base_battery_core_coreless/'
     if not os.path.exists(saver_root):
         os.mkdir(saver_root)
     args.save_folder = saver_root + '{:d}epoch_500/'.format(EPOCH)
