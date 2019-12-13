@@ -27,7 +27,7 @@
 数据集主要是使用项目需要的数据集。
 
 ### SIXray
-数据集使用的是SIXray数据集。f
+数据集使用的是SIXray数据集，数据为带电池核心与无电池核心的充电宝。
 
 
 ## Training SSD
@@ -69,10 +69,10 @@ python eval_5epoch_for.py
 
 ##### mAP
 
-| Original | Converted weiliu89 weights | From scratch w/o data aug | From scratch w/ data aug |
-|:-:|:-:|:-:|:-:|
-| 77.2 % | 77.26 % | 58.12% | 77.43 % |
-
+| mAP | core_AP |coreless_AP |
+|:-:|:-:|:-:|
+|94.53 % | 94.69 % | 94.37% | 
+  mAP, 0.9453, core_AP, 0.9469, coreless_AP, 0.9437
 
 
 
