@@ -27,12 +27,17 @@
 数据集主要是使用项目需要的数据集。
 
 ### SIXray
-数据集使用的是SIXray数据集。
+数据集使用的是SIXray数据集。f
 
 
 ## Training SSD
 - 首先需要下载vgg16与与训练好的模型，可以从该链接下载：https://s3.amazonaws.com/amdegroot-models/vgg16_reducedfc.pth； 在weight文件夹内有与训练的vgg16模型。
 - 默认的模型保存在`Sixray-Buaa/weights` 文件夹内。
+**核心训练参数**
+```python 
+--dataset #使用的数据集
+--dataset_root  #数据集的路径
+```
 
 ```Shell
 mkdir weights
@@ -52,11 +57,13 @@ python train.py
 ```Shell
 python eval_5epoch_for.py
 ```
-其中可以指定评估使用的模型与测试集的标签图像
-
-
-
-
+**模型评估重要的参数**
+```python
+--SIXray_root #数据集所在的根路径
+--imagesetfile #测试集所在标记文件的路径
+```
+- annopath 标记文件所在路径  
+- imgpath 图片所在的路径 
 ## Performance
 
 
