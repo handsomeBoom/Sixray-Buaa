@@ -72,7 +72,7 @@ python eval_5epoch_for.py
 | mAP | core_AP |coreless_AP |
 |:-:|:-:|:-:|
 |94.53 % | 94.69 % | 94.37% | 
-  mAP, 0.9453, core_AP, 0.9469, coreless_AP, 0.9437
+
 
 
 
